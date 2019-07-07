@@ -40,6 +40,38 @@ $(function() {
 		});
 	});
 
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1){
+			$('.head').addClass("sticky");
+		}
+		else{
+			$('.head').removeClass("sticky");
+		}
+	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 0) {
+			$('#scroller').fadeIn();
+		} else {
+			$('#scroller').fadeOut();
+		}
+	});
+	$('#scroller').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 400);
+		return false;
+	});
+
+	$('.head__menu').onePageNav({
+		currentClass: 'current',
+		changeHash: false,
+		scrollSpeed: 750,
+		scrollThreshold: 0.5,
+		filter: '',
+		easing: 'swing'
+	});
+
 	var wow = new WOW(
 	{
 		boxClass:     'wow', 

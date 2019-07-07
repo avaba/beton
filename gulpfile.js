@@ -46,9 +46,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/lazy-load/lazyload.min.js',
-		'app/libs/scroll/jquery.mCustomScrollbar.concat.min.js',
 		'app/libs/slick/slick.min.js',
-		'app/libs/numberAnimate/js/jquery.spincrement.min.js',
 		'app/libs/nav/nav.js',
 		'app/libs/animate/wow.min.js',
 		'app/js/common.js', // Always at the end
