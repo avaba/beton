@@ -31,13 +31,17 @@ $(function() {
 		]
 	});
 
-	$('.keys__slide').slick({
+	var slick = $('.keys__slide').slick({
 		dots: false,
 		lazyLoad: 'ondemand',
-		infinite: true,
+		infinite: false,
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+	});
+
+	$('.block6__item').click(function() {
+		slick.slick('refresh');
 	});
 
 	$('.fancybox').fancybox({
@@ -93,4 +97,7 @@ $(function() {
 	}
 	);
 	wow.init();
+
+
+
 });

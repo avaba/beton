@@ -783,8 +783,8 @@ h2,.h2 {
 		}
 	}
 	&__slide {
-		img, .video {
-			width: 555px;
+		.video {
+			width: 100%;
 			height: 311px;
 		}
 		.slick-prev {

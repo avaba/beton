@@ -46,10 +46,10 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/lazy-load/lazyload.min.js',
-		'app/libs/slick/slick.min.js',
 		'app/libs/nav/nav.js',
 		'app/libs/animate/wow.min.js',
-		'app/libs/fancybox/jquery.fancybox.pack.js',
+		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
+		'app/libs/slick/slick.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
