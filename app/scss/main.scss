@@ -753,4 +753,65 @@ h2,.h2 {
 	}
 }
 
+.keys {
+	padding: 30px;
+	color: #000;
+	background: #fff;
+	.container {
+		padding: 0;
+		width: 1140px;
+	}
+	.ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 60px;
+		li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 10px;
+			font-size: 14px;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				background: $accent;
+				left: 0;
+				top: 5px;
+			}
+		}
+	}
+	&__slide {
+		img, .video {
+			width: 555px;
+			height: 311px;
+		}
+		.slick-prev {
+			left: 15px;
+			z-index: 10;
+		}
+		.slick-next {
+			right: 15px;
+			z-index: 10;
+		}
+		.slick-next:before, .slick-prev:before {
+			font-size: 31px;
+		}
+		.slick-next, .slick-prev {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.formPopupp {
+		max-width: 100%;
+		text-align: left;
+		padding: 0;
+		input[type=submit] {
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+}
+
 @import "media"; // Always at the end
