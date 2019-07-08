@@ -78,11 +78,20 @@ img {
 	width: 100%;
 	z-index: 999;
 	padding: 15px 0;
+	background: rgba(51, 51, 51, 0.4);
 	&__logo {
 		display: inline-block;
 		color: $accent;
-		font-size: 26px;
+		font-size: 25px;
 		font-weight: 800;
+		position: relative;
+		padding-left: 60px;
+		img {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -26px;
+		}
 		span {
 			font-size: 13px;
 			font-weight: normal;
@@ -133,11 +142,22 @@ img {
 			color: #fff;
 		}
 	}
-	.call {
+	.call-head {
 		display: none;
 		padding: 12px 0;
 		width: 100%;
 		text-align: center;
+		width: 148.55px;
+		border: 2px solid $accent;
+		color: $accent;
+		font-size: 13px;
+		font-weight: 500;
+		transition: all .3s;
+		&:hover {
+			background: $accent;
+			color: #000;
+			transition: all .3s;
+		}
 	}
 	&.sticky {
 		position: fixed;
@@ -145,7 +165,7 @@ img {
 		.head__phone {
 			display: none;
 		}
-		.call {
+		.call-head {
 			display: inline-block;
 		}
 	}
@@ -179,6 +199,7 @@ img {
 		z-index: 10;
 		h1 {
 			margin: 0;
+			margin-top: 86px;
 			font-size: 45px;
 			margin-bottom: 40px;
 			text-transform: uppercase;
@@ -286,6 +307,10 @@ h2,.h2 {
 	&:first-letter {
 		color: $accent;
 	}
+	small {
+		font-size: 24px;
+		display: block;
+	}
 }
 
 .site {
@@ -390,6 +415,9 @@ h2,.h2 {
 	}
 	&__item {
 		text-align: center;
+		position: relative;
+		height: 100%;
+		margin-bottom: 30px;
 		img {
 			height: 80px;
 		}
@@ -603,11 +631,11 @@ h2,.h2 {
 	left: 30px;
 	text-align: center;
 	background: $accent;
-	font-size: 20px;
+	font-size: 30px;
 	border-radius: 100%;
-	line-height: 32px;
-	width: 32px;
-	height: 32px;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
 	display:none;
 	opacity: 0.8;
@@ -615,6 +643,15 @@ h2,.h2 {
 	&:hover {
 		opacity: 1;
 		transition: all .3s;
+	}
+}
+
+.block10 {
+	h2 {
+		margin-bottom: 30px;
+	}
+	.call {
+		margin-bottom: 50px;
 	}
 }
 
