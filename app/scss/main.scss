@@ -653,6 +653,10 @@ h2,.h2 {
 	.call {
 		margin-bottom: 50px;
 	}
+	b {
+		display: block;
+		margin-bottom: 10px;
+	}
 }
 
 @import "media"; // Always at the end
