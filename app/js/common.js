@@ -31,6 +31,10 @@ $(function() {
 		]
 	});
 
+	$('.fancybox').fancybox({
+		padding: 0,
+	});
+
 	var action = 'click';
 	var speed = "500";
 	jQuery(document).ready(function($){
