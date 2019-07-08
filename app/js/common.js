@@ -34,18 +34,26 @@ $(function() {
 	var slick = $('.keys__slide').slick({
 		dots: false,
 		lazyLoad: 'ondemand',
-		infinite: false,
+		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
 
-	$('.block6__item').click(function() {
-		slick.slick('refresh');
-	});
+$('body').on('mouseup', '.block6__item, .fancybox-navigation .fancybox-button', function () {
+				slick.slick('refresh');
+});
+
+/*$(document).on('mouseup', '', function () {
+				slick.slick('refresh');
+});-*/
+
 
 	$('.fancybox').fancybox({
 		padding: 0,
+		keyboard: false,
+		touch: false,
+		transitionEffect: 'slide',
 	});
 
 	var action = 'click';
